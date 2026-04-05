@@ -1,0 +1,26 @@
+// public/scss/magixhomebrands.scss
+
+.magix-homebrands-section {
+  // Parent section properties (si besoin spécifique)
+}
+
+.magix-homebrands {
+
+  .brand-logo-link {
+    opacity: 0.65;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+
+  .brand-logo-img {
+    height: 90px;
+    width: auto;
+    object-fit: contain; // Maintient les proportions sans couper
+    mix-blend-mode: multiply; // Retire le blanc des logos JPG sur fond gris
+  }
+}
