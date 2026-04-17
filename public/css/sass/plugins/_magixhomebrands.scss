@@ -2,11 +2,27 @@
 
 .magix-homebrands-section {
   // Parent section properties (si besoin spécifique)
+  #magix-homebrands-slider-track{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .magix-homebrands {
+  .splide__list {
+    display: flex;
+    align-items: center; // Aligne les logos sur la même ligne d'horizon
+  }
 
   .brand-logo-link {
+    /*filter: grayscale(100%); // Optionnel : logos en gris
+    opacity: 0.7;
+    transition: all 0.3s ease;
+
+    &:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+    }*/
     opacity: 0.65;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease;
 
